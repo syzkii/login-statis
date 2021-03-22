@@ -2,6 +2,7 @@
 <head>
   <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <title>Login | FORM</title>
 </head>
 <body>
 <div class="container-fluid px-0 px-md-3 px-lg-1 px-xl-5 py-5 mx-auto">
