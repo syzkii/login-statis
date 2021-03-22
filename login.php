@@ -1,42 +1,47 @@
-<DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Login | Form</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container-fluid">
+<div class="container-fluid px-0 px-md-3 px-lg-1 px-xl-5 py-5 mx-auto">
   <form method="post" action="logincek.php">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4"><strong>Login Data Siswa</h3></strong>
-              <form action="logincek.php" method="POST">
-                <div class="form-label-group">
-                  <td>Username</td>
-                  <td><input type="text" name="username" class="form-control mb-2"></td>
+    <div class="card card0 border-0">
+        <div class="row d-flex">
+            <div class="col-lg-6">
+                <div class="card1 pb-5">
+                    <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="img/header.png" class="image"> </div>
                 </div>
-                <div class="form-label-group">
-                <td>Password</td>
-                  <td><input type="password" name="password" class="form-control mb-5"></td>
-                </div>
-                <input class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit" name="simpan" value="Login"></input>
-              </form>
-              <?php if(isset($_GET['pesan'])) {  ?>
-                  <label style="color:red;"><?php echo $_GET['pesan']; ?></label>
-              <?php } ?>	
             </div>
-          </div>
+            <div class="col-lg-6">
+                <div class="card2 card border-0 px-4 py-5"><br><br/>
+                <h5>Login Data</h5><br/>
+                    <div class="row px-3"> 
+                    <label class="mb-1">
+                            <h6 class="mb-0 text-sm">Username</h6>
+                        </label> 
+                        <input type="text" class="form-control mb-4" name="username" placeholder="Enter a Username please"> 
+                    </div>
+                    <div class="row px-3"> <label class="mb-1">
+                            <h6 class="mb-0 text-sm">Password</h6>
+                        </label>
+                        <input type="password" class="form-control mb-4" name="password" placeholder="Enter ur Password"> 
+                    </div>
+                    <div class="row mb-3 px-3"> <button type="submit" class="btn btn-primary text-center">Login</button> 
+                    </div>
+                    <?php if(isset($_GET['pesan'])) {  ?>
+                     <label style="color:red;"><?php echo $_GET['pesan']; ?></label>
+                    <?php } ?>	
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="bg-blue py-4">
+            <div class="row px-3"> 
+            <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2021. All rights reserved by Rifki Ardian.</small>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 </body>
 </html>
+</form>

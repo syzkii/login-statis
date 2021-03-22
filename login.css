@@ -1,58 +1,125 @@
-:root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: 0.75rem;
+body {
+  color: #000;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: #B0BEC5;
+  background-repeat: no-repeat
+}
+
+.card0 {
+  box-shadow: 0px 4px 8px 0px #757575;
+  border-radius: 30px
+}
+
+.card2 {
+  margin: 0px 40px
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 35px
+}
+
+.image {
+  width: 360px;
+  height: 380px;
+  margin-top: 70px;
+}
+
+.border-line {
+  border-right: 1px solid #EEEEEE
+}
+
+.text-sm {
+  font-size: 14px !important
+}
+
+::placeholder {
+  color: #BDBDBD;
+  opacity: 1;
+  font-weight: 300
+}
+
+:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-weight: 300
+}
+
+::-ms-input-placeholder {
+  color: #BDBDBD;
+  font-weight: 300
+}
+
+input,
+textarea {
+  padding: 10px 12px 10px 12px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  color: #2C3E50;
+  font-size: 14px;
+  letter-spacing: 1px
+}
+
+input:focus,
+textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #304FFE;
+  outline-width: 0
+}
+
+button:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  outline-width: 0
+}
+
+a {
+  color: inherit;
+  cursor: pointer
+}
+
+.btn-blue {
+  background-color: #1A237E;
+  width: 150px;
+  color: #fff;
+  border-radius: 2px
+}
+
+.btn-blue:hover {
+  background-color: #000;
+  cursor: pointer
+}
+
+.bg-blue {
+  color: #fff;
+  background-color: #1A237E
+}
+
+@media screen and (max-width: 991px) {
+  .logo {
+      margin-left: 0px
   }
-  
-  .login,
+
   .image {
-    min-height: 100vh;
+      width: 300px;
+      height: 220px
   }
-  
-  .bg-image {
-    background-image: url('img/lojin.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 610px;
-    right: -60px;
+
+  .border-line {
+      border-right: none
   }
-  
-  .login-heading {
-    font-weight: 100;
+
+  .card2 {
+      border-top: 1px solid #EEEEEE !important;
+      margin: 0px 15px
   }
-  
-  .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-    border-radius: 2rem;
-  }
-  
-  .form-label-group {
-    position: relative;
-    margin-bottom: 1rem;
-  }
-  
-  .form-label-group>input,
-  .form-label-group>label {
-    padding: 10 10 6 !important;
-    height: auto;
-    border-radius: 2rem;
-  }
-  
-  .form-label-group>label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    margin-bottom: 0;
-    /* Override default `<label>` margin */
-    line-height: 1.5;
-    color: #495057;
-    cursor: text;
-    /* Match the input under the label */
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    transition: all .1s ease-in-out;
-  }
+}

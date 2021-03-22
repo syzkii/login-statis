@@ -144,8 +144,8 @@
 				?>
 				</td>
 				<td width='50%' align='left'>
-					<a href="logout.php" class="btn btn-lg btn-danger btn-kere3 text-uppercase font-weight-bold mb-2">Logout<i class="fa fa-sign-out" aria-hidden="true"></i></a>
-					<a href='add_siswa.php' class='btn btn-primary btn-kere2'><i class="fa fa-address-book"> Tambah Data Siswa</i></a>
+					<a href="logout.php" class="btn btn-lg btn-danger btn-kere3 text-uppercase font-weight-bold mb-2">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+					<a href='add_siswa.php' class='btn btn-primary btn-kere2'><i class="fa fa-id-card" aria-hidden="true"> Tambah Data Siswa</i></a>
 				</td>
 			</tr>
 
@@ -183,8 +183,8 @@
 					<TD align='center'><?php echo $data["no_hp_siswa"];?></TD>
 					<TD align='center'><?php echo $data["kelas"];?></TD>
 					<TD><center>
-						<a href='edit_siswa.php?no_induk=<?php echo $data["no_induk"]; ?>' class="btn btn-warning"><i class="fa fa-edit">Edit</a></i>
-						<a href='delete_siswa.php?no_induk=<?php echo $data["no_induk"]; ?>' class="btn btn-danger"><i class="fa fa-eraser">Delete</a></i>
+						<a href='edit_siswa.php?no_induk=<?php echo $data["no_induk"]; ?>' class="btn btn-warning"><i class="fa fa-edit"> Edit</a></i>
+						<a href='delete_siswa.php?no_induk=<?php echo $data["no_induk"]; ?>' class="btn btn-danger"><i class="fa fa-eraser"> Delete</a></i>
 					</TD>
 				</TR>				
 				<?
